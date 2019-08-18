@@ -28,18 +28,19 @@
 			<h4>Личный кабинет</h4>
 			<p>Введите пожалуйста свой логин и пароль</p>
 			<form>
-				<label>
+				<label class="hidden">Логин
 					<input type="text" name="login" placeholder="Логин">
 				</label>
-				<label>
+				<label class="hidden">Пароль
 					<input type="password" name="password" placeholder="Пароль">
 				</label>
-				<label>Запомните меня
-					<input type="checkbox" name="memorize" checked>
+				<label>
+					<input type="checkbox" name="memorize" checked>Запомните меня
 				</label>
 				<a href="#">Я забыл пароль</a>
-				<button class="btn">Войти</button>
-			</form>			
+				<button type="submit" class="btn">Войти</button>
+			</form>
+			<button type="button" class="close-btn">Закрыть форму входа в личный кабинет</button>			
 		</div>
 
 	</header>
@@ -95,13 +96,16 @@
 			<br><a href="#">Как нас найти?</a><br>Телефон:+7(495) 666-02-66
 		</p>
 
-		<div><img src="#" alt="Карта"></div>
+		<div>
+			<img src="#" alt="Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8">
+			<button type="button" class="close-btn">Закрыть карту</button>
+		</div>
 
 		<div class="social">
 			<ul class="social-list">
-				<li class="social-btn"><a href="#">VK</a></li>
-				<li class="social-btn"><a href="#">FB</a></li>
-				<li class="social-btn"><a href="#">Insta</a></li>
+				<li class="social-btn"><a href="#">Вконтакте</a></li>
+				<li class="social-btn"><a href="#">Фэйсбук</a></li>
+				<li class="social-btn"><a href="#">Инстаграмм</a></li>
 			</ul>
 		</div>
 

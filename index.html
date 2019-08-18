@@ -28,18 +28,19 @@
 			<h4>Личный кабинет</h4>
 			<p>Введите пожалуйста свой логин и пароль</p>
 			<form>
-				<label>
+				<label class="hidden">Логин
 					<input type="text" name="login" placeholder="Логин">
 				</label>
-				<label>
+				<label class="hidden">Пароль
 					<input type="password" name="password" placeholder="Пароль">
 				</label>
-				<label>Запомните меня
-					<input type="checkbox" name="memorize" checked>
+				<label>
+					<input type="checkbox" name="memorize" checked>Запомните меня
 				</label>
 				<a href="#">Я забыл пароль</a>
-				<button class="btn">Войти</button>
-			</form>			
+				<button type="submit" class="btn">Войти</button>
+			</form>
+			<button type="button" class="close-btn">Закрыть форму входа в личный кабинет</button>			
 		</div>
 
 	</header>
@@ -85,8 +86,8 @@
 			<figure>
 				<a href="#"><img src="#" alt="Интерьер"></a>
 			</figure>
-			<span class="btn galery-btn">Назад</span>
-			<span class="btn galery-btn">Вперед</span>
+			<button  type="button" class="btn galery-btn">Назад</button>
+			<button  type="button" class="btn galery-btn">Вперед</button>
 		</section>
 
 		<section class="contacts">
@@ -100,7 +101,21 @@
 		<section class="sign-up">
 			<h2>Записаться</h2>
 			<p>Укажите желаюемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
-		<!--	<form></form>  -->
+			<form class="sign-up-form">
+				<fieldset>
+					<label for="sign-up-date">Дата</label>
+					<input type="text" name="date" id="sign-up-date" placeholder="08.10.2017">
+					<label for="sign-up-time">Время</label>
+					<input type="text" name="time" id="sign-up-time" placeholder="10:00">
+					<label for="sign-up-name">Ваше имя</label>
+					<input type="text" name="name" id="sign-up-name" placeholder="Борода">
+					<label for="sign-up-phone">Телефон</label>
+					<input type="tel" name="phone" id="sign-up-phone" placeholder="+7 123 456-78-90">
+				</fieldset>
+				<button type="submit" class="btn">Отправить</button>
+			</form>
+
+	
 	
 		</section>
 
@@ -111,13 +126,16 @@
 			<br><a href="#">Как нас найти?</a><br>Телефон:+7(495) 666-02-66
 		</p>
 
-		<div><img src="#" alt="Карта"></div>
+		<div>
+			<img src="#" alt="Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8">
+			<button type="button" class="close-btn">Закрыть карту</button>
+		</div>
 
 		<div class="social">
 			<ul class="social-list">
-				<li class="social-btn"><a href="#">VK</a></li>
-				<li class="social-btn"><a href="#">FB</a></li>
-				<li class="social-btn"><a href="#">Insta</a></li>
+				<li class="social-btn"><a href="#">Вконтакте</a></li>
+				<li class="social-btn"><a href="#">Фэйсбук</a></li>
+				<li class="social-btn"><a href="#">Инстаграмм</a></li>
 			</ul>
 		</div>
 

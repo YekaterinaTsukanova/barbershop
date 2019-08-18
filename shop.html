@@ -28,18 +28,19 @@
 			<h4>Личный кабинет</h4>
 			<p>Введите пожалуйста свой логин и пароль</p>
 			<form>
-				<label>
+				<label class="hidden">Логин
 					<input type="text" name="login" placeholder="Логин">
 				</label>
-				<label>
+				<label class="hidden">Пароль
 					<input type="password" name="password" placeholder="Пароль">
 				</label>
-				<label>Запомните меня
-					<input type="checkbox" name="memorize" checked>
+				<label>
+					<input type="checkbox" name="memorize" checked>Запомните меня
 				</label>
 				<a href="#">Я забыл пароль</a>
-				<button class="btn">Войти</button>
-			</form>			
+				<button type="submit" class="btn">Войти</button>
+			</form>
+			<button type="button" class="close-btn">Закрыть форму входа в личный кабинет</button>			
 		</div>
 
 	</header>
@@ -57,39 +58,41 @@
 
 		<aside>
 			<form>
-				<h3>Производители:</h3>
+				<fieldset>
+					<legend>Производители:</legend>
+					<label> 
+						<input type="checkbox" name="baxter-of-california" checked>Baxter of California
+					</label>
+					<label>
+						<input type="checkbox" name="mr-natty">Mr Natty
+					</label>
+					<label>
+						<input type="checkbox" name="survecito" checked>Suavecito
+					</label>
+					<label>
+						<input type="checkbox" name="malin+goetz">Malin+Goetz
+					</label>
+					<label>
+						<input type="checkbox" name="murray's">Murray's
+					</label>
+					<label>
+						<input type="checkbox" name="american-crew" checked>American crew
+					</label>
+				</fieldset>
 
-				<label> Baxter of California
-					<input type="checkbox" name="baxter-of-california" checked>
-				</label>
-				<label>Mr Natty
-					<input type="checkbox" name="mr-natty">
-				</label>
-				<label>Suavecito
-					<input type="checkbox" name="survecito" checked>
-				</label>
-				<label>Malin+Goetz
-					<input type="checkbox" name="malin+goetz">
-				</label>
-				<label>Murray's
-					<input type="checkbox" name="murray's">
-				</label>
-				<label>American crew
-					<input type="checkbox" name="american-crew" checked>
-				</label>
-			
-				<h3>Группы товаров:</h3>
-			
-				<label>Бритвенные принадлежности
-					<input type="radio" name="shaving-items">
-				</label>
-				<label>Средства для ухода
-					<input type="radio" name="product-for-care" checked>
-				</label>
-				<label>Аксессуары
-					<input type="radio" name="accessory">
-				</label>
-				<button class="btn show-btn">Показать</button>
+				<fieldset>
+					<legend>Группы товаров:</legend>
+					<label>
+						<input type="radio" name="group-of-items" value="shaving-items">Бритвенные принадлежности
+					</label>
+					<label>
+						<input type="radio" name="group-of-items" value="product-for-care" checked>Средства для ухода
+					</label>
+					<label>
+						<input type="radio" name="group-of-items" value="accessory">Аксессуары
+					</label>
+				</fieldset>
+				<button type="submit" class="btn show-btn">Показать</button>
 			</form>
 		</aside>
 
@@ -101,42 +104,42 @@
 					<p>Набор для путешествий</p>
 					<p>"Baxter of California"</p>
 					<b>2 900<span></span></b>
-					<button>Купить</button>
+					<a href="#">Купить</a>
 				</li>
 				<li>
 					<a href="#"><img src="#" alt="Увлажняющий кондиционер"></a>
 					<p>Увлажняющий кондиционер</p>
 					<p>"Baxter of California"</p>
 					<b>750<span></span></b>
-					<button>Купить</button>
+					<a href="#">Купить</a>
 				</li>
 				<li>
 					<a href="#"><img src="#" alt="Гель для "></a>
 					<p>Гель для волос</p>
 					<p>"Suavecito"</p>
 					<b>290<span></span></b>
-					<button>Купить</button>
+					<a href="#">Купить</a>
 				</li>
 				<li>
 					<a href="#"><img src="#" alt="Глина для укладки волос"></a>
 					<p>Глина для укладки волос</p>
 					<p>"American crew"</p>
 					<b>500<span></span></b>
-					<button>Купить</button>
+					<a href="#">Купить</a>
 				</li>
 				<li>
 					<a href="#"><img src="#" alt="Гель для волос"></a>
 					<p>Гель для волос</p>
 					<p>"American crew"</p>
 					<b>300<span></span></b>
-					<button>Купить</button>
+					<a href="#">Купить</a>
 				</li>
 				<li>
 					<a href="#"><img src="#" alt="Набор для бриться"></a>
 					<p>Набор для бриться</p>
 					<p>"Baxter of California"</p>
 					<b>3 900<span></span></b>
-					<button>Купить</button>
+					<a href="#">Купить</a>
 				</li>
 			</ul>
 			<ul class="pages-list">
@@ -154,13 +157,16 @@
 			<br><a href="#">Как нас найти?</a><br>Телефон:+7(495) 666-02-66
 		</p>
 
-		<div><img src="#" alt="Карта"></div>
+		<div>
+			<img src="#" alt="Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8">
+			<button type="button" class="close-btn">Закрыть карту</button>
+		</div>
 
 		<div class="social">
 			<ul class="social-list">
-				<li class="social-btn"><a href="#">VK</a></li>
-				<li class="social-btn"><a href="#">FB</a></li>
-				<li class="social-btn"><a href="#">Insta</a></li>
+				<li class="social-btn"><a href="#">Вконтакте</a></li>
+				<li class="social-btn"><a href="#">Фэйсбук</a></li>
+				<li class="social-btn"><a href="#">Инстаграмм</a></li>
 			</ul>
 		</div>
 
