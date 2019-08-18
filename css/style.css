@@ -1,0 +1,192 @@
+body{
+	background-color: #000;
+	color: #fff;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	background-image: url("../img/back.png");
+	background-position: center;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color:inherit;
+}
+ul,
+figure,
+h2{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+time{
+	text-transform: none;
+}
+h2{
+	font-size: 30px;
+	line-height: 42px;
+}
+h3{
+	font-size: 24px;
+	line-height: 30px;
+}
+.btn{
+color: #fff;
+background-color: #000;
+font-size: inherit;
+line-height: inherit;
+}
+.hidden,
+.visually-hidden{
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border:0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.container{
+	margin-left:auto;
+	margin-right: auto;
+}
+.main,
+.main-index>div{
+	background-color: #fff;
+	color: #000;
+	width: auto;
+}
+.breadcrumbs li:last-child a{
+	color:#aba9a7;
+}
+a.footer-search{
+	text-decoration: underline;
+}
+
+.flex-row,
+.breadcrumbs{
+	display:flex;
+	flex-direction: row;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.logo-img{
+	order: 1;
+}
+.header,
+.footer{
+	width: auto;
+}
+.header{
+	background-color: #000;
+	height: 20px;
+	padding-top: 26px;
+	padding-bottom: 26px;
+}
+.index-header nav,
+.main-index,
+.narrow-container{
+	width: 940px;
+}
+.header nav{
+	justify-content: space-between;
+}
+.index-header{
+	margin-bottom: 290px;
+}
+.logo-img{
+	height: 155px;
+	width: 371px;
+	margin-top: 60px;
+}
+nav .index-header-list:first-of-type{
+	min-width: 560px;
+	justify-content: space-around;
+}
+nav .header-list:first-of-type{
+	min-width: 710px;
+	justify-content: space-around;
+}
+.features-list h3,
+.features-list p{
+	text-align: center;
+}
+.features-list{
+	justify-content: space-around;
+}
+.feature-list li{
+	flex-basis: 300px;
+}
+.two-columns section:first-child{
+	flex-basis: 380px;
+	margin-left: 80px;
+}
+.two-columns section:last-child{
+	flex-basis: 300px;
+	margin-right: 80px;
+}
+.two-columns,
+.price-two-columns,
+.footer .flex-row{
+	justify-content: space-between;
+}
+.price-two-columns section:first-child{
+	flex-basis: 300px;
+	margin-right: auto;
+}
+
+.price-two-columns section{
+	flex-basis: 460px;
+}
+
+.price-two-columns p{
+	flex-basis: 380px;
+	margin-right: auto;
+}
+.shop-content{
+	justify-content: space-between;
+}
+.shop-content aside{
+	flex-basis: 220px;
+}
+.shop-content section{
+	flex-basis: 700px;
+}
+.products .products-list{
+	flex-wrap: wrap;
+	justify-content: space-between;
+} 
+.products-list li{
+	flex-basis: 220px;
+	display: flex;
+	flex-direction: column;
+
+}
+.products-list li p:first-of-type{
+	text-transform: none;
+}
+.barbershop-item{
+	justify-content: space-between;
+}
+.barbershop-item div:first-child{
+	flex-basis: 460px;
+}
+.barbershop-item section:first-of-type{
+	flex-basis: 390px;
+}
+.product-description .flex-row{
+	align-items: baseline;
+	justify-content: space-between;
+}
+.product-description .flex-row span{
+	color: #c0c0bf;
+}

@@ -4,27 +4,33 @@
 	<title>Barbershop Borodinski</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
 <body>
 
-	<header class="index-header main-header">
+	<header class="index-header header">
 
-		<nav>
-			<ul class="header-list">
-				<li><a href="#"><img src="#" alt="logo"></a></li>
+		<div class="container flex-column  narrow-container">
+		<a href="#" class="logo-img container"><img src="img/index-logo.png" alt="logo"></a>
+
+		<nav class="flex-row">
+			<ul class="index-header-list flex-row">
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Новости</a></li>
 				<li><a href="price.html">Прайс-лист</a></li>
 				<li><a href="shop.html">Магазин</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
+			
+			<ul class="index-header-list">
+			<li><a href="#">Вход</a></li>
+			</ul>
+
 		</nav>
 
-		<ul class="header-list">
-			<li><a href="#">Вход</a></li>
-		</ul>
+		</div>
 
-		<div class="login wait-to-click">
+		<div class="login wait-to-click visually-hidden">
 			<h4>Личный кабинет</h4>
 			<p>Введите пожалуйста свой логин и пароль</p>
 			<form>
@@ -44,13 +50,13 @@
 		</div>
 
 	</header>
-	<main>
+	<main class="main-index container">
 
 		<h1 class="hidden">Барбершоп "Бородинский"</h1>
 
-		<section class="features">
+		<section class="features flex-row">
 			<h2 class="hidden">Преимущества</h2>
-			<ul class="features-list">
+			<ul class="features-list flex-row">
 				<li>
 					<h3>Быстро</h3>
 					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
@@ -66,77 +72,80 @@
 			</ul>
 		</section>
 
-		<section class="news">
-			<h2>Новости</h2>
-			<ul class="news-list">
-				<li>
-					<p>Нам наконец завезли ягермайстер! Теперь Вы можетее пропустить стаканчик во время стрижки</p>
-					<time datetime="2019-01-18">11 января</time>
-				</li>
-				<li>
-					<p>В нашей команде пополнениеб Борис "Бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-					<time datetime="2019-01-18">18 января</time>
-				</li>
-			</ul>
-			<a href="#" class="btn news-btn">Все новости</a>
-		</section>
+		<div class="flex-row two-columns">
+			<section class="news">
+				<h2>Новости</h2>
+				<ul class="news-list">
+					<li>
+						<p>Нам наконец завезли ягермайстер! Теперь Вы можетее пропустить стаканчик во время стрижки</p>
+						<time datetime="2019-01-18">11 января</time>
+					</li>
+					<li>
+						<p>В нашей команде пополнениеб Борис "Бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+						<time datetime="2019-01-18">18 января</time>
+					</li>
+				</ul>
+				<a href="#" class="btn news-btn">Все новости</a>
+			</section>
 
-		<section class="galery">
-			<h2>Фотогалерея</h2>
-			<figure>
-				<a href="#"><img src="#" alt="Интерьер"></a>
-			</figure>
-			<button  type="button" class="btn galery-btn">Назад</button>
-			<button  type="button" class="btn galery-btn">Вперед</button>
-		</section>
-
-		<section class="contacts">
-			<h2>Контактная информация</h2>
-			<address>Барбершоп "Бородинский"<br>Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8<br>Телефон:+7(495) 666-02-66</address>
-			<p>Время работы:Пн-пт: С 10:00 до 22:00<br>Сб-вс: С 10:00 до 19:00<br></p>
-			<a href="#" class="btn contacts-btn">Как проехать</a>
-			<a href="#" class="btn contacts-btn">Обратная связь</a>
-		</section>
-
-		<section class="sign-up">
-			<h2>Записаться</h2>
-			<p>Укажите желаюемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
-			<form class="sign-up-form">
-				<fieldset>
-					<label for="sign-up-date">Дата</label>
-					<input type="text" name="date" id="sign-up-date" placeholder="08.10.2017">
-					<label for="sign-up-time">Время</label>
-					<input type="text" name="time" id="sign-up-time" placeholder="10:00">
-					<label for="sign-up-name">Ваше имя</label>
-					<input type="text" name="name" id="sign-up-name" placeholder="Борода">
-					<label for="sign-up-phone">Телефон</label>
-					<input type="tel" name="phone" id="sign-up-phone" placeholder="+7 123 456-78-90">
-				</fieldset>
-				<button type="submit" class="btn">Отправить</button>
-			</form>
-
-	
-	
-		</section>
-
-	</main>
-	<footer class="footer">
-
-		<p>Барбершоп "Бородинский"<br>Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8
-			<br><a href="#">Как нас найти?</a><br>Телефон:+7(495) 666-02-66
-		</p>
-
-		<div>
-			<img src="#" alt="Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8">
-			<button type="button" class="close-btn">Закрыть карту</button>
+			<section class="galery">
+				<h2>Фотогалерея</h2>
+				<figure>
+					<a href="#"><img src="img/interior.jpg" alt="Интерьер"></a>
+				</figure>
+				<button  type="button" class="btn galery-btn">Назад</button>
+				<button  type="button" class="btn galery-btn">Вперед</button>
+			</section>
 		</div>
 
-		<div class="social">
-			<ul class="social-list">
-				<li class="social-btn"><a href="#">Вконтакте</a></li>
-				<li class="social-btn"><a href="#">Фэйсбук</a></li>
-				<li class="social-btn"><a href="#">Инстаграмм</a></li>
-			</ul>
+		<div class="flex-row two-columns">
+			<section class="contacts">
+				<h2>Контактная информация</h2>
+				<address>Барбершоп "Бородинский"<br>Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8<br>Телефон:+7(495) 666-02-66</address>
+				<p>Время работы:Пн-пт: С 10:00 до 22:00<br>Сб-вс: С 10:00 до 19:00<br></p>
+				<a href="#" class="btn contacts-btn">Как проехать</a>
+				<a href="#" class="btn contacts-btn">Обратная связь</a>
+			</section>
+
+			<section class="sign-up">
+				<h2>Записаться</h2>
+				<p>Укажите желаюемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
+				<form class="sign-up-form">
+					<fieldset>
+						<label for="sign-up-date">Дата</label>
+						<input type="text" name="date" id="sign-up-date" placeholder="08.10.2017">
+						<label for="sign-up-time">Время</label>
+						<input type="text" name="time" id="sign-up-time" placeholder="10:00">
+						<label for="sign-up-name">Ваше имя</label>
+						<input type="text" name="name" id="sign-up-name" placeholder="Борода">
+						<label for="sign-up-phone">Телефон</label>
+						<input type="tel" name="phone" id="sign-up-phone" placeholder="+7 123 456-78-90">
+					</fieldset>
+					<button type="submit" class="btn">Отправить</button>
+				</form>
+			</section>
+		</div>
+
+	</main>
+	<footer class="footer index-footer">
+		
+		<div class="container  flex-row narrow-container">
+			<p>Барбершоп "Бородинский"<br>Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8
+				<br><a href="#" class="footer-search">Как нас найти?</a><br>Телефон:+7(495) 666-02-66
+			</p>
+
+			<div class="visually-hidden">
+				<img src="img/map.png" alt="Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8">
+				<button type="button" class="close-btn">Закрыть карту</button>
+			</div>
+
+			<div class="social">
+				<ul class="social-list">
+					<li class="social-btn"><a href="#">Вконтакте</a></li>
+					<li class="social-btn"><a href="#">Фэйсбук</a></li>
+					<li class="social-btn"><a href="#">Инстаграмм</a></li>
+				</ul>
+			</div>
 		</div>
 
 	</footer>
