@@ -17,34 +17,15 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="price.html">Прайс-лист</a></li>
-					<li><a href="#">Магазин</a></li>
+					<li class="this-page"><a href="#">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			
-				<ul class="header-list">
+				<ul class="header-list login-list">
 					<li><a href="#">Вход</a></li>
 				</ul>
 			</nav>
 
-
-			<div class="login wait-to-click  visually-hidden">
-				<h4>Личный кабинет</h4>
-				<p>Введите пожалуйста свой логин и пароль</p>
-				<form>
-					<label class="hidden">Логин
-						<input type="text" name="login" placeholder="Логин">
-					</label>
-					<label class="hidden">Пароль
-						<input type="password" name="password" placeholder="Пароль">
-					</label>
-					<label>
-						<input type="checkbox" name="memorize" checked>Запомните меня
-					</label>
-					<a href="#">Я забыл пароль</a>
-					<button type="submit" class="btn">Войти</button>
-				</form>
-				<button type="button" class="close-btn">Закрыть форму входа в личный кабинет</button>			
-			</div>
 		</div>
 
 	</header>
@@ -67,35 +48,35 @@
 						<fieldset class="flex-column">
 							<legend>Производители:</legend>
 							<label> 
-								<input type="checkbox" name="baxter-of-california" checked>Baxter of California
+								<input class="hidden" type="checkbox" name="baxter-of-california" checked><span></span>Baxter of California
 							</label>
 							<label>
-								<input type="checkbox" name="mr-natty">Mr Natty
+								<input class="hidden" type="checkbox" name="mr-natty"><span></span>Mr Natty
 							</label>
 							<label>
-								<input type="checkbox" name="survecito" checked>Suavecito
+								<input class="hidden" type="checkbox" name="survecito" checked><span></span>Suavecito
 							</label>
 							<label>
-								<input type="checkbox" name="malin+goetz">Malin+Goetz
+								<input class="hidden" type="checkbox" name="malin+goetz"><span></span>Malin+Goetz
 							</label>
 							<label>
-								<input type="checkbox" name="murray's">Murray's
+								<input class="hidden" type="checkbox" name="murray's"><span></span>Murray's
 							</label>
 							<label>
-								<input type="checkbox" name="american-crew" checked>American crew
+								<input class="hidden" type="checkbox" name="american-crew" checked><span></span>American crew
 							</label>
 						</fieldset>
 
 						<fieldset class="flex-column">
 							<legend>Группы товаров:</legend>
 							<label>
-								<input type="radio" name="group-of-items" value="shaving-items">Бритвенные принадлежности
+								<input class="hidden" type="radio" name="group-of-items" value="shaving-items"><span></span>Бритвенные принадлежности
 							</label>
 							<label>
-								<input type="radio" name="group-of-items" value="product-for-care" checked>Средства для ухода
+								<input class="hidden" type="radio" name="group-of-items" value="product-for-care" checked><span></span>Средства для ухода
 							</label>
 							<label>
-								<input type="radio" name="group-of-items" value="accessory">Аксессуары
+								<input class="hidden" type="radio" name="group-of-items" value="accessory"><span></span>Аксессуары
 							</label>
 						</fieldset>
 						<button type="submit" class="btn show-btn">Показать</button>
@@ -107,80 +88,123 @@
 					<ul class="products-list flex-row">
 						<li>
 							<a href="barbershop-item.html"><img src="img/item1.png" alt="Набор для путешествий"></a>
-							<p>Набор для путешествий</p>
-							<p>"Baxter of California"</p>
-							<b>2 900<span></span></b>
-							<a href="#" class="btn">Купить</a>
+							<div class="flex-column">
+								<p>Набор для путешествий</p>
+								<p>"Baxter of California"</p>
+								<div class="flex-row">
+									<b>2900 ₽</b>
+									<a href="#" class="btn">Купить</a>
+								</div>
+							</div>
 						</li>
 						<li>
 							<a href="#"><img src="img/item2.png" alt="Увлажняющий кондиционер"></a>
-							<p>Увлажняющий кондиционер</p>
-							<p>"Baxter of California"</p>
-							<b>750<span></span></b>
-							<a href="#" class="btn">Купить</a>
+							<div class="flex-column">
+								<p>Увлажняющий кондиционер</p>
+								<p>"Baxter of California"</p>
+								<div class="flex-row">
+									<b>750 ₽</b>
+									<a href="#" class="btn">Купить</a>
+								</div>
+							</div>
 						</li>
 						<li>
 							<a href="#"><img src="img/item3.png" alt="Гель для "></a>
-							<p>Гель для волос</p>
-							<p>"Suavecito"</p>
-							<b>290<span></span></b>
-							<a href="#" class="btn">Купить</a>
+							<div class="flex-column">
+								<p>Гель для волос</p>
+								<p>"Suavecito"</p>
+								<div class="flex-row">
+									<b>290 ₽</b>
+									<a href="#" class="btn">Купить</a>
+								</div>
+							</div>
 						</li>
 						<li>
 							<a href="#"><img src="img/item4.png" alt="Глина для укладки волос"></a>
-							<p>Глина для укладки волос</p>
-							<p>"American crew"</p>
-							<b>500<span></span></b>
-							<a href="#" class="btn">Купить</a>
+							<div class="flex-column">
+								<p>Глина для укладки волос</p>
+								<p>"American crew"</p>
+								<div class="flex-row">
+									<b>500 ₽</b>
+									<a href="#" class="btn">Купить</a>
+								</div>
+							</div>
 						</li>
 						<li>
 							<a href="#"><img src="img/item5.png" alt="Гель для волос"></a>
-							<p>Гель для волос</p>
-							<p>"American crew"</p>
-							<b>300<span></span></b>
-							<a href="#" class="btn">Купить</a>
+							<div class="flex-column">
+								<p>Гель для волос</p>
+								<p>"American crew"</p>
+								<div class="flex-row">
+									<b>300 ₽</b>
+									<a href="#" class="btn">Купить</a>
+								</div>
+							</div>
 						</li>
 						<li>
 							<a href="#"><img src="img/item6.png" alt="Набор для бриться"></a>
-							<p>Набор для бриться</p>
-							<p>"Baxter of California"</p>
-							<b>3 900<span></span></b>
-							<a href="#" class="btn">Купить</a>
+							<div class="flex-column">
+								<p>Набор для бриться</p>
+								<p>"Baxter of California"</p>
+								<div class="flex-row">
+									<b>3900 ₽</b>
+									<a href="#" class="btn">Купить</a>
+								</div>
+							</div>
 						</li>
 					</ul>
 					<ul class="pages-list flex-row">
 						<li><a href="#" class="btn">1</a></li>
-						<li><a href="#" class="btn">2</a></li>
+						<li><a href="#" class="btn choosen-page">2</a></li>
 						<li><a href="#" class="btn">3</a></li>
 						<li><a href="#" class="btn">4</a></li>
 					</ul>
 				</section>
 			</div>
 		</div>
+		<div class="login-form flex-column hidden">
+			<h4>Личный кабинет</h4>
+			<p>Введите пожалуйста свой логин и пароль</p>
+			<form>
+				<label class="hidden" for="login">Логин</label>
+				<input type="text" name="login" id="login" placeholder="Логин"><span></span>
+				<label class="hidden" for="password" id="password">Пароль</label>
+				<input type="password" name="password" placeholder="Пароль"><span></span>
+				<div class="flex-row">
+					<label class="memorize">
+						<input class="hidden" type="checkbox" name="memorize" checked><span class="indicator"></span>Запомните меня
+					</label>
+					<a href="#">Я забыл пароль</a>
+				</div>
+				<button type="submit" class="btn login-btn">Войти</button>
+			</form>
+			<button type="button" class="close-btn">Закрыть форму входа в личный кабинет</button>			
+		</div>
+
+		<div class="map hidden">
+			<img src="img/map.png" alt="Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8">
+			<button type="button" class="close-btn">Закрыть карту</button>
+		</div>
+
 
 	</main>
 	<footer class="footer index-footer">
 		
 		<div class="container  flex-row narrow-container">
-			<p>Барбершоп "Бородинский"<br>Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8
+			<p>Барбершоп "Бородинский"<br>Адрес:г.Санкт-Петербург, Б. Конюшенная,Д.19/8
 				<br><a href="#" class="footer-search">Как нас найти?</a><br>Телефон:+7(495) 666-02-66
 			</p>
 
-			<div class="visually-hidden">
-				<img src="img/map.png" alt="Адрес:г.Санкт-Петербург, Б. Конбшенная,Д.19/8">
-				<button type="button" class="close-btn">Закрыть карту</button>
-			</div>
-
 			<div class="social">
-				<ul class="social-list">
+				<p>Давайте дружить!</p>
+				<ul class="social-list flex-row">
 					<li class="social-btn"><a href="#">Вконтакте</a></li>
 					<li class="social-btn"><a href="#">Фэйсбук</a></li>
-					<li class="social-btn"><a href="#">Инстаграмм</a></li>
+					<li class="social-btn"><a href="#">Инстаграм</a></li>
 				</ul>
 			</div>
 		</div>
 
 	</footer>
-
 </body>
 </html>
