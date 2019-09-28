@@ -171,11 +171,12 @@ label:hover{
 .index-header-list a{
 	padding-bottom: 23px;
 }
-.
+
 nav .index-header-list:first-of-type{
 	min-width: 560px;
 	justify-content: flex-start;
 }
+
 nav .header-list:first-of-type{
 	min-width: 710px;
 	justify-content: flex-start;
@@ -526,7 +527,7 @@ text-transform: inherit;
 	margin-right: auto;
 }
 .galery-btn:last-of-type{
-	margin-left: : auto;
+	margin-left: auto;
 }
 .contacts-btn{
 	display: inline-block;
