@@ -388,11 +388,23 @@ align-self:flex-start;
 	height: 20px;
 	background-color: #fff;
 	position: relative;
-	left: 210px;
+	left: 85%;
 	top: -45px;
 	background-repeat: no-repeat;
 	background-position: 3px 5px;
 }
+
+.login-form.inner-page input[name="login"]+span::before,
+.login-form.inner-page input[name="password"]+span::before{
+top: -55px;
+}
+
+.login-form.inner-page .flex-row{
+padding-left: 10px;
+
+}
+
+
 .login-form input[name="login"]+span::before{
 	background-image: url(../svg/user.svg);
 }
@@ -572,6 +584,10 @@ text-transform: inherit;
 }
 .social-list li:nth-child(3){
 	background: #000 url("../svg/instagram.svg") no-repeat 50% 50%;
+}
+.social-list .social-btn:hover{
+background-color: #663d15;
+
 }
 
 li.this-page a{
